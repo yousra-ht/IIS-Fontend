@@ -114,6 +114,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "IIS-Frontend"
+    }
+  },
+  "defaultProject": "IIS-Frontend",
+  "cli": {
+    "analytics": false
+  }
 }

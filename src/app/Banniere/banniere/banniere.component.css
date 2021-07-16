@@ -48,3 +48,12 @@
     color: #ff000c;
     font-weight: 900;
 }
+@media (max-width: 992px) {
+
+    .main-banner .caption h2 {
+      font-size: 64px;
+      letter-spacing: 2px;
+  
+    }
+   
+  }
