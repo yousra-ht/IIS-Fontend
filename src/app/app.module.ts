@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { MenuComponent } from './MenuFolder/menu/menu.component';
 import { FooterComponent } from './FooterFolder/footer/footer.component';
 import { ServiceComponent } from './ServiceFolder/service/service.component';
+import { BanniereComponent } from './Banniere/banniere/banniere.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MenuComponent,
     FooterComponent,
-    ServiceComponent
+    ServiceComponent,
+    BanniereComponent
   ],
   imports: [
     BrowserModule,
