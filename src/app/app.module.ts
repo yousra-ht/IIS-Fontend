@@ -7,6 +7,8 @@ import { MenuComponent } from './MenuFolder/menu/menu.component';
 import { FooterComponent } from './FooterFolder/footer/footer.component';
 import { ServiceComponent } from './ServiceFolder/service/service.component';
 import { ValueComponent } from './valueFolder/value/value.component';
+import { CounterComponent } from './CounterFolder/counter/counter.component';
+import { DescriptionComponent } from './ShortDescriptionFolder/description/description.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { ValueComponent } from './valueFolder/value/value.component';
     FooterComponent,
     ServiceComponent,
     ValueComponent,
-    BanniereComponent
+    BanniereComponent,
+    CounterComponent,
+    DescriptionComponent
   ],
   imports: [
     BrowserModule,
