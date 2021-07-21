@@ -7,6 +7,7 @@ import { MenuComponent } from './MenuFolder/menu/menu.component';
 import { FooterComponent } from './FooterFolder/footer/footer.component';
 import { ServiceComponent } from './ServiceFolder/service/service.component';
 import { ValueComponent } from './valueFolder/value/value.component';
+import { TeamComponent } from './TeamFolder/team/team.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { ValueComponent } from './valueFolder/value/value.component';
     FooterComponent,
     ServiceComponent,
     ValueComponent,
-    BanniereComponent
+    BanniereComponent,
+    TeamComponent
   ],
   imports: [
     BrowserModule,
