@@ -7,8 +7,9 @@ import { MenuComponent } from './MenuFolder/menu/menu.component';
 import { FooterComponent } from './FooterFolder/footer/footer.component';
 import { ServiceComponent } from './ServiceFolder/service/service.component';
 import { ValueComponent } from './valueFolder/value/value.component';
-import { CounterComponent } from './CounterFolder/counter/counter.component';
-import { DescriptionComponent } from './ShortDescriptionFolder/description/description.component';
+import { TeamComponent } from './TeamFolder/team/team.component';
+import{ DescriptionComponent} from'./ShortDescriptionFolder/description/description.component';
+import{CounterComponent} from'./CounterFolder/counter/counter.component'
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { DescriptionComponent } from './ShortDescriptionFolder/description/descr
     ValueComponent,
     BanniereComponent,
     CounterComponent,
-    DescriptionComponent
+    DescriptionComponent,
+    TeamComponent,
   ],
   imports: [
     BrowserModule,
