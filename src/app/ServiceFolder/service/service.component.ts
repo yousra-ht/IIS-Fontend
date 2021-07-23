@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ServiceIISService } from '../service-iis.service';
 
 @Component({
   selector: 'app-service',
@@ -6,10 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./service.component.css']
 })
 export class ServiceComponent implements OnInit {
-
-  constructor() { }
+  ServiceListe = [];
+ 
+  constructor(private serviceIISService: ServiceIISService) { }
 
   ngOnInit() {
+    this.serviceIISService.getAllService().then((resp) => { this.ServiceListe = resp.data['hydra:member']; console.log(this.ServiceListe) });
   }
+
 
 }
