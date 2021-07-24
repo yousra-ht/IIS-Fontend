@@ -16,9 +16,17 @@
 
                                     <div  *ngFor="let i of  TeamListe" class="col-md-3">
                                         <div class="single_team white-text m-t-2 wow zoomIn">
-                                            <img src="img/team1.jpg" alt="team" />
+                                      
+                                      <div *ngIf="display; else elseTemplate">
+                                                <img src="{{i.image}}" alt="team"/>
+                                      </div>
+                                      <div #elseTemplate>
+                                                <img [src]="cheminImage" alt="team"/>
+                                      </div>
+
+
                                             <div class="single_team_overlay">
-                                                <h4>{{i.nom}}</h4>
+                                                <h4>{{i.prenom}} {{i.nom}}</h4>
                                                 <p>{{i.role}}</p>
                                                 <div class="team_socail">
                                                     <a href="#!"><i class="fa fa-facebook"></i></a>
@@ -26,6 +34,7 @@
                                                     <a href="#!"><i class="fa fa-pinterest-p"></i></a>
                                                     <a href="#!"><i class="fa fa-dribbble"></i></a>
                                                     <a href="#!"><i class="fa fa-behance"></i></a>
+                                                    
                                                 </div>
                                             </div>
                                         </div>

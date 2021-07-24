@@ -6,7 +6,7 @@ import {TeamService } from '../team.service';
   styleUrls: ['./team.component.css']
 })
 export class TeamComponent implements OnInit {
-
+ cheminImage:any = "assets/img/user.png";
  public TeamListe = [];
   constructor(private _teamService : TeamService ) { }
 
