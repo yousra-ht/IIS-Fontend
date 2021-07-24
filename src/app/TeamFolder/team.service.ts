@@ -6,7 +6,7 @@ import axios from 'axios';
   providedIn: 'root'
 })
 export class TeamService {
- private BaseUrl = 'http://localhost:8000/api/equipes/';
+  private BaseUrl = 'https://localhost:8000/api/equipes/';
   constructor() { }
 
   async getAllTeam() {
