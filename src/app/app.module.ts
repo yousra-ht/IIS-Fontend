@@ -9,7 +9,8 @@ import { ServiceComponent } from './ServiceFolder/service/service.component';
 import { ValueComponent } from './valueFolder/value/value.component';
 import { TeamComponent } from './TeamFolder/team/team.component';
 import{ DescriptionComponent} from'./ShortDescriptionFolder/description/description.component';
-import{CounterComponent} from'./CounterFolder/counter/counter.component'
+import{CounterComponent} from'./CounterFolder/counter/counter.component';
+import { PartenrComponent } from './PartnerFolder/partenr/partenr.component'
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import{CounterComponent} from'./CounterFolder/counter/counter.component'
     CounterComponent,
     DescriptionComponent,
     TeamComponent,
+    PartenrComponent,
   ],
   imports: [
     BrowserModule,
