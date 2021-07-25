@@ -1,18 +1,14 @@
 import { Injectable } from '@angular/core';
 import axios from 'axios';
-
-
 @Injectable({
   providedIn: 'root'
 })
-export class TeamService {
- private BaseUrl = 'http://localhost:8000/api/equipes/';
+export class ServiceIISService {
+  private BaseUrl = 'https://localhost:8000/api/services';
+
   constructor() { }
 
-  async getAllTeam() {
+  async getAllService() {
     return await axios.get(`${this.BaseUrl}`);
   }
-
-
-
 }

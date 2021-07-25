@@ -1,0 +1,84 @@
+<hr />
+<section id="service" class="service">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="main_service_area">
+                    <div class="head_title center m-y-3 wow fadeInUp">
+                        <h2>Our Service</h2>
+                    </div>
+
+        
+
+
+                    <div class="text-center">
+
+                        <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    </div>
+
+                    <ul class="timeline"  >
+
+                            <ng-container *ngFor="let Service of  ServiceListe ; let i = index" >
+                                    <ng-container *ngIf="i %2 == 0">
+                                        <li >
+                                                    
+                                                
+                                            <div class="timeline-image">
+                                                <img class="rounded-circle img-fluid"
+                                                    src="../../../assets/img/service/1.jpg" alt="..." />
+                                            </div>
+                                            <div class="timeline-panel">
+                                                <div class="timeline-heading">
+
+                                                    <h4 class="subheading">{{Service.title}}</h4>
+                                                </div>
+                                                <div class="timeline-body">
+                                                    <p class="text-muted">{{Service.description}} </p>
+                                            
+                                                </div>
+                                            </div>
+                                    
+                                        </li>
+                                       
+                                    </ng-container>
+                                   
+                                    <ng-container *ngIf=" i %2 != 0">
+                                        
+                                            <li class="timeline-inverted"   >
+                                                <div class="timeline-image"><img class="rounded-circle img-fluid"
+                                                        src="../../../assets/img/service/2.jpg" alt="..." />
+                                                </div>
+                                                
+                                                <div class="timeline-panel">
+                                                    <div class="timeline-heading">
+                                                        <h4 class="subheading">{{Service.title}}</h4>
+                                                    </div>
+                                                    <div class="timeline-body">
+                                                        <p class="text-muted">{{Service.description}} </p>
+                                                    </div>
+                                                </div>
+                                        
+                                            </li>
+                                       
+                                        </ng-container>
+                            </ng-container>
+               
+                            <li class="timeline-inverted">
+                                <div class="timeline-image">
+                                    <h4>
+                                        Be Part
+                                        <br />
+                                        Of Our
+                                        <br />
+                                        Story!
+                                    </h4>
+                                </div>
+                            </li>
+                    </ul>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr />
+</section> <!-- End of service section -->

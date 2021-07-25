@@ -8,6 +8,8 @@ import { FooterComponent } from './FooterFolder/footer/footer.component';
 import { ServiceComponent } from './ServiceFolder/service/service.component';
 import { ValueComponent } from './valueFolder/value/value.component';
 import { TeamComponent } from './TeamFolder/team/team.component';
+import{ DescriptionComponent} from'./ShortDescriptionFolder/description/description.component';
+import{CounterComponent} from'./CounterFolder/counter/counter.component'
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { TeamComponent } from './TeamFolder/team/team.component';
     ServiceComponent,
     ValueComponent,
     BanniereComponent,
-    TeamComponent
+    CounterComponent,
+    DescriptionComponent,
+    TeamComponent,
   ],
   imports: [
     BrowserModule,

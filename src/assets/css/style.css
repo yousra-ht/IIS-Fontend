@@ -138,7 +138,7 @@ input[type=date], input[type=datetime-local], input[type=email], input[type=numb
 }
 .navbar{
     padding: 0 1rem;
-    height: 91px;
+ 
     background: transparent;
 }
 
@@ -353,7 +353,7 @@ div.panel.show {
 
 
 .main_joinus_area{
-    background: url(../img/joinbg.jpg) no-repeat top center;
+   background-color: rgb(255, 255, 255);
     background-size: cover;
 }
 
@@ -367,6 +367,7 @@ div.panel.show {
 .main_joinus_content p{
     width: 75%;
     margin:20px auto;
+    color: black;
 }
 
 
