@@ -4,7 +4,7 @@ import axios from 'axios';
   providedIn: 'root'
 })
 export class ServiceIISService {
-  private BaseUrl = 'https://localhost:8000/api/services';
+  private BaseUrl = 'http://localhost:8000/api/services';
 
   constructor() { }
 

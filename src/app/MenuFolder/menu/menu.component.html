@@ -1,8 +1,9 @@
+<!-- Start your project here-->
+<!--Navbar-->
 
-    <!-- Start your project here-->
-    <!--Navbar-->
-
-    <div class='preloader'><div class='loaded'>&nbsp;</div></div>
+<div class='preloader'>
+    <div class='loaded'>&nbsp;</div>
+</div>
 <nav class="navbar navbar-fixed-top navbar-light bg-faded">
     <!--Collapse button-->
     <div class="container">
@@ -11,17 +12,37 @@
         <!--Content for large and medium screens-->
         <div class="navbar-desktop">
             <!--Navbar Brand-->
-            <a class="navbar-brand" href="#home"><img src="../../../assets/img/logo/ilef.jpg" alt="" /></a>
+            <a class="navbar-brand" href="#"><img src="../../../assets/img/logo/ilef.jpg" alt="" /></a>
             <!--Links-->
             <ul class="nav navbar-nav pull-right hidden-md-down text-uppercase">
+
+
+
+                <!-- <li class="nav-item">
+                    <a class="nav-link" routerLink="/Accueil" style="color:#ff000c;">Accueil <span
+                            class="sr-only">(current)</span></a>
+                </li> -->
+
+
+
                 <li class="nav-item">
-                    <a class="nav-link" href="#home" style="color:#ff000c;" >Accueil <span  class="sr-only">(current)</span></a>
+                    <a class="nav-link" routerLink="/">Accueil</a>
                 </li>
+
+
                 <li class="nav-item">
-                    <a class="nav-link"style="color:#ff000c;"   href="#about">Service</a>
+                    <a class="nav-link" routerLink="/services">Services</a>
                 </li>
+
+
+                <!-- <li routerLinkActive="active" class="nav-item">
+                    <a class="nav-link" routerLink="/services" style="color:#ff000c;" routerLink="/Articles">Service</a>
+                </li> -->
+
+
+
                 <li class="nav-item">
-                    <a class="nav-link" href="#service">Partenaire</a>
+                    <a class="nav-link" routerLink="/partenaire">Partenaire</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#team">A propos</a>
@@ -32,9 +53,10 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#newsletter">Recrutement</a>
                 </li>
-               
+
+
             </ul>
-            
+
         </div>
 
         <!-- Content for mobile devices-->
@@ -66,5 +88,3 @@
         </div>
     </div>
 </nav>
-
-

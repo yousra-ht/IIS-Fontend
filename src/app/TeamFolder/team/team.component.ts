@@ -6,12 +6,12 @@ import {TeamService } from '../team.service';
   styleUrls: ['./team.component.css']
 })
 export class TeamComponent implements OnInit {
-
+ cheminImage:any = "assets/img/user.png";
  public TeamListe = [];
+ 
+ visibleImages: any[] = [];
   constructor(private _teamService : TeamService ) { }
-
   ngOnInit() {
     this._teamService.getAllTeam().then((resp) => { this.TeamListe = resp.data; });
   }
-
 }

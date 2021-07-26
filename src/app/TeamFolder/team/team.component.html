@@ -4,9 +4,8 @@
                     <div class="col-sm-12">
                         <div class="main_team_area m-y-3">
                             <div class="head_title center  wow fadeInUp">
-                                <h2>Meet Our Team</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec odio ipsum. Suspendisse
-                                    cursus malesuada facilisis.Lorem ipsum dolor sit amet, consectetur facilisis.</p>
+                                <h2>Notre Équipe</h2>
+                                <p></p>
                             </div>
 
                             <div  class="main_team_content center" >
@@ -16,9 +15,9 @@
 
                                     <div  *ngFor="let i of  TeamListe" class="col-md-3">
                                         <div class="single_team white-text m-t-2 wow zoomIn">
-                                            <img src="img/team1.jpg" alt="team" />
+                                      <td class="py-1">  <img src="http://127.0.0.1:8000/upload/{{i.image}}" width="400" height="400"></td> 
                                             <div class="single_team_overlay">
-                                                <h4>{{i.nom}}</h4>
+                                                <h4>{{i.prenom}} {{i.nom}}</h4>
                                                 <p>{{i.role}}</p>
                                                 <div class="team_socail">
                                                     <a href="#!"><i class="fa fa-facebook"></i></a>
@@ -26,6 +25,7 @@
                                                     <a href="#!"><i class="fa fa-pinterest-p"></i></a>
                                                     <a href="#!"><i class="fa fa-dribbble"></i></a>
                                                     <a href="#!"><i class="fa fa-behance"></i></a>
+                                                    
                                                 </div>
                                             </div>
                                         </div>
