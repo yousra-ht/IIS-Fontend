@@ -10,7 +10,10 @@ import { ValueComponent } from './valueFolder/value/value.component';
 import { TeamComponent } from './TeamFolder/team/team.component';
 import{ DescriptionComponent} from'./ShortDescriptionFolder/description/description.component';
 import{CounterComponent} from'./CounterFolder/counter/counter.component';
-import { PartenrComponent } from './PartnerFolder/partenr/partenr.component'
+import { PartenrComponent } from './PartnerFolder/partenr/partenr.component';
+import { HomeComponent } from './HomeFolder/home/home.component'
+import { HttpClientModule } from '@angular/common/http';
+// import {HttpClient} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -24,10 +27,14 @@ import { PartenrComponent } from './PartnerFolder/partenr/partenr.component'
     DescriptionComponent,
     TeamComponent,
     PartenrComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    // HttpClient
+
   ],
   providers: [],
   bootstrap: [AppComponent]
