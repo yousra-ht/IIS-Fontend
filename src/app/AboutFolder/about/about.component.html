@@ -1,0 +1,56 @@
+<section class="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="main_about_area">
+                    <div class="head_title center m-y-3 wow fadeInUp">
+                        <h2>à propos nous</h2>
+                        <p> Ilef InfoService est spécialisée dans le conseil en systèmes et logiciels informatiques.</p>
+                    </div>
+
+                    <div class="main_about_content">
+                        <div class="row">
+                            <div class="col-md-6">
+
+                                <div class="main_accordion wow fadeInLeft" data-wow-duration="2s" data-wow-delay="0.3s"
+                                    data-wow-offset="0">
+
+                                    <img style="    width: 470px;
+                                    height: 292px;
+                                    margin-top: 110px;" src="../../../assets/img/logo/ilef.jpg">
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="single_about about_progress">
+                                    <div class="skill wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s"
+                                        data-wow-offset="0">
+                                        <!-- progress start -->
+                                        
+                                        <ng-container *ngFor="let Service of  ServiceListe ; let i = index" >
+                                        <div class="progress">
+                                            <div class="lead" >{{Service.title}} {{Service.pourcentage}} % </div>
+                                            <div class="progress-bar wow fadeInLeft"  [style.width.%]="getWidth(Service)"
+                                            data-wow-duration="1.5s" data-wow-delay="1.2s">
+
+                                            <div  class="progress-bar wow fadeInLeft"   data-wow-duration="1.5s" data-wow-delay="1.2s" ng-style="{width: '80px'}"></div>
+                                            </div>
+                                        </div>
+                                        <!-- progress end -->
+                                    </ng-container >
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr />
+    <br />
+    <br />
+    <br />
+    <hr />
+</section><!-- End of About Section-->
