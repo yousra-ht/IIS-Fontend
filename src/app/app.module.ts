@@ -13,6 +13,7 @@ import{CounterComponent} from'./CounterFolder/counter/counter.component';
 import { PartenrComponent } from './PartnerFolder/partenr/partenr.component';
 import { HomeComponent } from './HomeFolder/home/home.component'
 import { HttpClientModule } from '@angular/common/http';
+import { CarouselComponent } from './Banniere/carousel/carousel.component';
 // import {HttpClient} from '@angular/common/http';
 
 @NgModule({
@@ -28,6 +29,7 @@ import { HttpClientModule } from '@angular/common/http';
     TeamComponent,
     PartenrComponent,
     HomeComponent,
+    CarouselComponent,
   ],
   imports: [
     BrowserModule,
