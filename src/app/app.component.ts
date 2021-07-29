@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { VariablesGlobalesComponent } from './variables-globales/variables-globales.component';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,20 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'IIS-Frontend';
+  // condition=true;
+  global;
+  
+  constructor(private parame : VariablesGlobalesComponent) {
+  
+   this.global = parame.p
+    console.log(this.global)
+  
+  }
+  ngOnInit()
+  {
+    console.log(this.global)
+  }
+
+
+  
 }

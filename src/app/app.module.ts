@@ -15,6 +15,8 @@ import { HomeComponent } from './HomeFolder/home/home.component'
 import { HttpClientModule } from '@angular/common/http';
 import { CarouselComponent } from './Banniere/carousel/carousel.component';
 import { AboutComponent } from './AboutFolder/about/about.component';
+import { ContactComponent } from './ContactFolder/contact/contact.component';
+import { VariablesGlobalesComponent } from './variables-globales/variables-globales.component';
 // import {HttpClient} from '@angular/common/http';
 
 @NgModule({
@@ -32,6 +34,8 @@ import { AboutComponent } from './AboutFolder/about/about.component';
     HomeComponent,
     CarouselComponent,
     AboutComponent,
+    ContactComponent,
+    VariablesGlobalesComponent,
   ],
   imports: [
     BrowserModule,
@@ -40,7 +44,7 @@ import { AboutComponent } from './AboutFolder/about/about.component';
     // HttpClient
 
   ],
-  providers: [],
+  providers: [VariablesGlobalesComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
