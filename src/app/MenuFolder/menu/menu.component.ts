@@ -11,5 +11,7 @@ export class MenuComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  service() {
+    window.open('services', '_self');
+  }
 }
