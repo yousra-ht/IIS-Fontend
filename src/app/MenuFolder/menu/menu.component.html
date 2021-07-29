@@ -4,6 +4,7 @@
 <div class='preloader'>
     <div class='loaded'>&nbsp;</div>
 </div>
+
 <nav class="navbar navbar-fixed-top navbar-light bg-faded">
     <!--Collapse button-->
     <div class="container">
@@ -31,7 +32,7 @@
 
 
                 <li class="nav-item">
-                    <a class="nav-link" routerLink="/services" (click)="service()">Services</a>
+                    <a class="nav-link"  routerLink="/services" >Services</a>
                 </li>
 
 
@@ -44,16 +45,38 @@
                 <li class="nav-item">
                     <a class="nav-link" routerLink="/partenaire">Partenaire</a>
                 </li>
+            
+
+              
+
+                <li class="btn-group nav-item">
+                    <a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    A propos  
+                    </a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#">Qui nous sommes</a>
+                      <a class="dropdown-item" href="#">Recrutement</a>
+                      <!-- <a class="dropdown-item" href="#">Blog</a> -->
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Separated link</a>
+                    </div>
+                </li>
+                  
+
+
                 <li class="nav-item">
-                    <a class="nav-link" href="#team">A propos</a>
+                    <a class="nav-link"routerLink="/contact">Contact</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#portfolio">Contact</a>
+                    <a class="nav-link" routerLink="/partenaire">Blog</a>
                 </li>
+<!-- 
                 <li class="nav-item">
-                    <a class="nav-link" href="#newsletter">Recrutement</a>
+                    <a class="nav-link" href="#newsletter">Inscription</a>
                 </li>
 
+             
+                   -->
 
             </ul>
 
