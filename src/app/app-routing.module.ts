@@ -4,15 +4,18 @@ import { HomeComponent } from './HomeFolder/home/home.component';
 import { PartenrComponent } from './PartnerFolder/partenr/partenr.component';
 import { ServiceComponent } from './ServiceFolder/service/service.component';
 import { ContactComponent } from './ContactFolder/contact/contact.component';
-
+import { IndexComponent } from './index/index.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
+
+
+  { path: '', 
+  component: IndexComponent , children : [
+   { path:'home', component: HomeComponent },
   { path: 'services', component: ServiceComponent },
   { path: 'partenaire', component: PartenrComponent},
   { path: 'contact', component:  ContactComponent },
-  
-
+  ]},
 
 ];
 

@@ -1,7 +1,4 @@
 <app-menu></app-menu>
-<ng-container *ngIf= "global ==='true' "> 
-
-    <app-carousel></app-carousel>
-    </ng-container>
+<app-carousel *ngIf = "location == '/services' "></app-carousel>
 <router-outlet></router-outlet>
 <app-footer></app-footer>

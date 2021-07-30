@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { VariableGService } from 'src/app/variable-g.service';
 import { ServiceIISService } from '../service-iis.service';
-import { VariablesGlobalesComponent} from '../../variables-globales/variables-globales.component';
+
 @Component({
   selector: 'app-service',
   templateUrl: './service.component.html',
@@ -8,10 +10,9 @@ import { VariablesGlobalesComponent} from '../../variables-globales/variables-gl
 })
 export class ServiceComponent implements OnInit {
   ServiceListe = [];
-  condition=true;
 
-  constructor(private serviceIISService: ServiceIISService ,private parame : VariablesGlobalesComponent) { 
-    console.log(parame.p="true")
+  constructor(private serviceIISService: ServiceIISService ,private parame : VariableGService,public router: Router) { 
+  console.log(this.parame.location);
   }
 
  
