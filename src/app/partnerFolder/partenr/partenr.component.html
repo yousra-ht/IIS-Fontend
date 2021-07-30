@@ -5,29 +5,26 @@
                 <div class="head_title center  wow fadeInUp">
                     <h2>Nos Partenaire</h2>
                 </div>
-
+                
                 <div class="main_works_content p-y-3">
-                    <div class="col-md-3">
-                        <div class="single_works wow zoomIn">
-                            <img src="../../../assets/img/works1.png" alt="" />
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="single_works wow zoomIn">
-                            <img src="./../../assets/img/works2.png" alt="" />
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="single_works wow zoomIn">
-                            <img src="./../../assets/img/works3.png" alt="" />
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="single_works wow zoomIn">
-                            <img src="./../../assets/img/works4.png" alt="" />
-                        </div>
-                    </div>
+                    <ul>
+                    <ng-container *ngFor="let Partner of  PartnerListe; let i = index" >
+                      
+                            <li>
+                                    <div class="col-md-3">
+                                        <div class="single_works wow zoomIn">
+                                            <img src="http://127.0.0.1:8000/upload/{{Partner.logo}}" style="margin: 27px;" width="100" height="50">
+                                        
+                                        </div>
+                                    </div>
+                            </li>
+                           
+                
                     
+                </ng-container>
+
+            </ul>
+
                 </div>
             </div>
         </div>

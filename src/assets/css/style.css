@@ -111,7 +111,6 @@ input[type=date], input[type=datetime-local], input[type=email], input[type=numb
 
 .head_title h2{
     margin-bottom:2rem;
-    margin-top: -558px;
 }
 .head_title p{
     width:75%;

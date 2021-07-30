@@ -14,6 +14,7 @@ import { PartenrComponent } from './PartnerFolder/partenr/partenr.component';
 import { HomeComponent } from './HomeFolder/home/home.component'
 import { HttpClientModule } from '@angular/common/http';
 import { CarouselComponent } from './Banniere/carousel/carousel.component';
+import { AboutComponent } from './AboutFolder/about/about.component';
 // import {HttpClient} from '@angular/common/http';
 
 @NgModule({
@@ -30,6 +31,7 @@ import { CarouselComponent } from './Banniere/carousel/carousel.component';
     PartenrComponent,
     HomeComponent,
     CarouselComponent,
+    AboutComponent,
   ],
   imports: [
     BrowserModule,
