@@ -18,9 +18,11 @@
 
 .page-heading .text-content h2 {
 	/* color: #fff; */
-	font-size: 62px;
-	text-transform: uppercase;
-	letter-spacing: 5px;
+	/* font-size: 62px; */
+    /* font-size: 62px; */
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: white;
 }
 .page-heading {
 	padding: 210px 0px 130px 0px;

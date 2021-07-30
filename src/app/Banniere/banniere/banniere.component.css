@@ -11,7 +11,7 @@
 }
 .video-overlay {
     position: absolute;
-    background-color: rgb(53 28 28 / 93%);
+    background-color: rgb(53 28 28 / 60%);
     top: 0;
     left: 0;
     bottom: 7px;
