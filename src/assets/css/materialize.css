@@ -7342,7 +7342,7 @@ input[type=range]:focus::-ms-fill-upper {
     margin: 0;
     height: 301px !important ;
    /* background-color: transparent; */
-   background-image: url("../../../assets/img/flipcker1.jpg"); 
+   /* background-image: url("../../../assets/img/imgAbout.jpg");  */
    background-repeat: no-repeat;
    background-size: 100%;
 }

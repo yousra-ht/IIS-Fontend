@@ -9,16 +9,17 @@ import { VariableGService } from 'src/app/variable-g.service';
   styleUrls: ['./carousel.component.css']
 })
 export class CarouselComponent implements OnInit {
- 
-  constructor(private parame : VariableGService) {
-  this.parame.location;
-  
-   }
+condition; 
+  constructor(private parame: VariableGService) {
+    this.parame.location;
 
-   y =this.parame.location;
-
-  ngOnInit() {
   }
 
- 
+  y = this.parame.location;
+
+  ngOnInit() {
+   
+  }
+  
+
 }

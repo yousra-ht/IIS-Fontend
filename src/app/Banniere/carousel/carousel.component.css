@@ -1,9 +1,41 @@
-
-.style1{
-    height: 100px;
-}
-.slider 
-{
-    height: 300px !important ;
+body {
+    background-color:#000000e0;
+    margin:0;
+ }
+ 
+ .patterns {
+   height: 45vh;
+ }
+ 
+ 
+ 
+ svg text {
+   font-family: Lora;
+   letter-spacing: 10px;
+   stroke: #e922298c;
+   font-size: 150px;
+   font-weight: 700;
+   stroke-width: 3;
+  
+   animation: textAnimate 15s infinite alternate;
    
-}
+ }
+ 
+ @keyframes textAnimate {
+   0% {
+     stroke-dasharray: 0 50%;
+     stroke-dashoffset:  20%;
+     fill: rgba(255, 255, 255, 0)
+ 
+   }
+   
+   100% {
+     stroke-dasharray: 50% 0;
+     stroke-dashoffstet: -20%;
+     fill:hsl(0, 0%, 100%)
+   }
+   
+ }
+ 
+ 
+ 
