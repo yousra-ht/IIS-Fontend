@@ -10,7 +10,7 @@ import { ServiceIISService } from '../service-iis.service';
 })
 export class ServiceComponent implements OnInit {
   ServiceListe = [];
-
+  condition=true;
   constructor(private serviceIISService: ServiceIISService ,private parame : VariableGService,public router: Router) { 
   console.log(this.parame.location);
   }
