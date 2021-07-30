@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ServiceIISService } from '../service-iis.service';
-
+import { VariablesGlobalesComponent} from '../../variables-globales/variables-globales.component';
 @Component({
   selector: 'app-service',
   templateUrl: './service.component.html',
@@ -8,12 +8,19 @@ import { ServiceIISService } from '../service-iis.service';
 })
 export class ServiceComponent implements OnInit {
   ServiceListe = [];
+  condition=true;
+
+  constructor(private serviceIISService: ServiceIISService ,private parame : VariablesGlobalesComponent) { 
+    console.log(parame.p="true")
+  }
+
  
-  constructor(private serviceIISService: ServiceIISService) { }
 
   ngOnInit() {
     this.serviceIISService.getAllService().then((resp) => { this.ServiceListe = resp.data['hydra:member']; console.log(this.ServiceListe) });
+  
   }
 
 
+ 
 }

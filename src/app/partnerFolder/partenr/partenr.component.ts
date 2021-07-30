@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import{PartnerService} from '../partner.service'
+import { VariablesGlobalesComponent } from 'src/app/variables-globales/variables-globales.component';
+import{PartnerService} from '../partner.service';
+
 @Component({
   selector: 'app-partenr',
   templateUrl: './partenr.component.html',
@@ -8,7 +10,10 @@ import{PartnerService} from '../partner.service'
 export class PartenrComponent implements OnInit {
   PartnerListe: any;
 
-  constructor( private PartnerService : PartnerService ) { }
+  constructor( private PartnerService : PartnerService,private parame : VariablesGlobalesComponent ) {
+    parame.p="false"
+    console.log(parame.p)
+   }
 
   ngOnInit() {
 
