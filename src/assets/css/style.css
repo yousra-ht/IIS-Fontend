@@ -147,12 +147,12 @@ input[type=date], input[type=datetime-local], input[type=email], input[type=numb
 }
 
 .navbar-light .navbar-nav .nav-link{
-    font-size: 20px;
-    color:#ffffff;
-    font-weight: initial;
+    font-size: 20px !important;
+    color:#ffffff !important;
+    font-weight: initial !important;
 }
 .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
-    color:#ec4848;
+    color:#ec4848 !important;
 }
 .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .active>.nav-link:focus, .navbar-light .navbar-nav .active>.nav-link:hover, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.active:focus, .navbar-light .navbar-nav .nav-link.active:hover, .navbar-light .navbar-nav .nav-link.open, .navbar-light .navbar-nav .nav-link.open:focus, .navbar-light .navbar-nav .nav-link.open:hover, .navbar-light .navbar-nav .open>.nav-link, .navbar-light .navbar-nav .open>.nav-link:focus, .navbar-light .navbar-nav .open>.nav-link:hover{
     color:#ec4848;

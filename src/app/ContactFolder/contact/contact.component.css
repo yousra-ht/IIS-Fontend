@@ -9,6 +9,7 @@
 
 
 .page-heading .text-content h4 {
+
 	color: #f33f3f;
 	font-size: 22px;
 	text-transform: uppercase;
@@ -26,11 +27,12 @@
     color: white;
 }
 .page-heading {
-	padding: 210px 0px 130px 0px;
-	text-align: center;
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: cover;
+	margin: 0% !important;
+	padding: 210px 0px 130px 0px !important;
+	text-align: center !important;
+	background-position: center center !important;
+	background-repeat: no-repeat !important;
+	background-size: cover !important;
 }
 
 .find-us {
