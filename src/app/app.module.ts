@@ -21,6 +21,7 @@ import { VariableGService } from './variable-g.service';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BlogComponent } from './BlogFolder/blog/blog.component';
 import { DetailedArticleComponent } from './BlogFolder/detailed-article/detailed-article.component';
+import { OfferComponent } from './OfferFolder/offer/offer.component';
 // import {HttpClient} from '@angular/common/http';
 
 @NgModule({
@@ -42,6 +43,7 @@ import { DetailedArticleComponent } from './BlogFolder/detailed-article/detailed
     IndexComponent,
     BlogComponent,
     DetailedArticleComponent,
+    OfferComponent,
   ],
   imports: [
     BrowserModule,
