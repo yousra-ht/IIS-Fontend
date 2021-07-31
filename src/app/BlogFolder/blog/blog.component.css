@@ -1,0 +1,32 @@
+.blog-posts .down-content h4 {
+    font-size: 24px;
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+    font-weight: 900;
+    color: #7c89ab;
+    margin: 10px 0px 12px 0px;
+}
+.blog-posts .main-button a {
+    height: 40px;
+    line-height: 43px;
+    padding: 0px;
+    width: 26%;
+    text-align: center;
+}
+.main-button a {
+    display: inline-block;
+    background-color: #ea2229c9;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 12px 20px;
+    /* text-transform: uppercase; */
+    transition: all .3s;
+}
+.sidebar .recent-posts ul li h5 {
+    font-size: 14px;
+    font-weight: 900;
+    color: #20232e;
+    line-height: 30px;
+    transition: all 0.3s;
+}
