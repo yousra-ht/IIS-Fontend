@@ -18,6 +18,7 @@ import { AboutComponent } from './AboutFolder/about/about.component';
 import { ContactComponent } from './ContactFolder/contact/contact.component';
 import { IndexComponent } from './index/index.component';
 import { VariableGService } from './variable-g.service';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 // import {HttpClient} from '@angular/common/http';
 
 @NgModule({
@@ -42,6 +43,8 @@ import { VariableGService } from './variable-g.service';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
     // HttpClient
 
   ],

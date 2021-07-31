@@ -16,6 +16,7 @@
 	margin-bottom: 15px;
 }
 
+
 .page-heading .text-content h2 {
 	/* color: #fff; */
 	font-size: 62px;
@@ -48,7 +49,7 @@
 /* Send Message */
 
 .send-message {
-	margin-top: px;
+	margin-top: 47px;
 }
 
 .contact-form input {
@@ -169,4 +170,8 @@ ul.social-icons li a:hover {
 	text-align: left;
 	margin-bottom: 60px;
 	border-bottom: 1px solid #85929E;
+}
+
+.invalid-feedback{
+	color: #121212;
 }
