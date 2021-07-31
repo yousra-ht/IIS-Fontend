@@ -16,7 +16,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { CarouselComponent } from './Banniere/carousel/carousel.component';
 import { AboutComponent } from './AboutFolder/about/about.component';
 import { ContactComponent } from './ContactFolder/contact/contact.component';
-import { VariablesGlobalesComponent } from './variables-globales/variables-globales.component';
+import { IndexComponent } from './index/index.component';
+import { VariableGService } from './variable-g.service';
 // import {HttpClient} from '@angular/common/http';
 
 @NgModule({
@@ -35,7 +36,7 @@ import { VariablesGlobalesComponent } from './variables-globales/variables-globa
     CarouselComponent,
     AboutComponent,
     ContactComponent,
-    VariablesGlobalesComponent,
+    IndexComponent,
   ],
   imports: [
     BrowserModule,
@@ -44,7 +45,7 @@ import { VariablesGlobalesComponent } from './variables-globales/variables-globa
     // HttpClient
 
   ],
-  providers: [VariablesGlobalesComponent],
+  providers: [VariableGService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
