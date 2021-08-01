@@ -15,10 +15,10 @@ export class PartenrComponent implements OnInit {
    }
 
   ngOnInit() {
-
+console.log(window.location.href);
     this.PartnerService.getAllPartenaire().then((resp) => {
       this.PartnerListe = resp.data['hydra:member'];
-      console.log(this.PartnerListe[0]);
+      console.log(this.PartnerListe);
       
   }
 
