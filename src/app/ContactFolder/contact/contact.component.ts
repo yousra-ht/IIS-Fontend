@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import {ContactService} from '../contact.service';
 
 
@@ -9,25 +9,39 @@ import {ContactService} from '../contact.service';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent implements OnInit {
+  form: FormGroup;
 
-  form = new FormGroup({
+  submitted = false;
+
+
+
+
+
+
+  constructor(private _contactService:ContactService,private formBuilder: FormBuilder) { }
+
+  
+
+  ngOnInit() {
+    this.form = this.formBuilder.group({
     nom: new FormControl('', [Validators.required]),
     prenom: new FormControl('', [Validators.required]),
     mail: new FormControl('', [Validators.required,Validators.email ]),
     message: new FormControl('', [Validators.required]),
   });
 
-
-
-  constructor(private _contactService:ContactService) { }
-
-  ngOnInit() {
   }
+
+
+
+
+
   get f() { return this.form.controls; }
 
   submit(e) {
+    this.submitted = true;
     if (this.form.invalid) {
-      console.log("echec")
+      return; 
     }
     else{
     e.stopPropagation()
@@ -39,7 +53,8 @@ export class ContactComponent implements OnInit {
         'message': this.form.get('message').value,
         'Date': new Date()
       }).then(() => {
-        console.warn("success");
+        alert("SUCCESS!")
+       
       })
     }
   }

@@ -1,10 +1,8 @@
 
-<<<<<<< HEAD
-=======
 
->>>>>>> 82b0a2d04fab35e38e4c19053a9ca2ed009b7123
     <div class="z1">
-    
+      validation.init();
+
     <div class="page-heading contact-heading header-text">
       <div class="container">
         <div class="row">
@@ -31,40 +29,66 @@
             <div class="contact-form">
               <form [formGroup]="form" id="contact" action="" method="post">
                 <div class="row">
+
                   <div class="col-lg-6 col-md-12 col-sm-12">
                     <fieldset>
-                      <input formControlName="nom" name="nom" type="text" class="form-control" id="name" placeholder="Nom" required="">
+                      <input formControlName="nom" name="nom" type="text" class="form-control" id="name" placeholder="Nom" class="validate" data-validate="required ,custom"  pattern="[A-F]" >
                     </fieldset>
+
+                    <div *ngIf="submitted && f.nom.errors" class="validate-popup active">
+                      <div *ngIf="f.nom.errors.required"> Ce champ est obligatoire </div>
+                    </div>
+
+                    <!-- <input id="fullName" class="validate" data-validate="required">
+<input type="email" id="email" class="validate" data-validate="required, email">
+
+ -->
+
                   </div>
+
                   <div class="form-row">
                     <div class="col-lg-6">
-                      <input formControlName="prenom"  name="prenom" type="text" class="form-control" id="prenom" placeholder="Prenom" required="">
+                      <input formControlName="prenom"  name="prenom" type="text" class="form-control" id="prenom" placeholder="Prenom" required pattern="[A-F]">
+                    </div>
+                    <div *ngIf="submitted && f.prenom.errors" class="invalid-feedback">
+                      <div *ngIf="f.prenom.errors.required"> Ce champ est obligatoire </div>
                     </div>
                   </div>
+
                   <div class="col-lg-12 col-md-12 col-sm-12">
                     <fieldset>
-                      <input formControlName="mail"    name="email" type="text" class="form-control" id="email" placeholder="E-Mail " required="">
+                      <input formControlName="mail"    name="email" type="text" class="form-control" id="email" placeholder="E-Mail " required="required">
                     </fieldset>
-
+                    <div *ngIf="submitted && f.mail.errors " class="invalid-feedback">
+                      <div *ngIf="f.mail.errors.required"> Ce champ est obligatoire </div>
+                      <div *ngIf="f.mail.errors.email">champ invalide</div>
+                    </div>
                   </div>
 
-                  <div *ngIf="submitted && f.mail.errors" class="invalid-feedback">
-                    <div *ngIf="f.mail.errors.required"> First Name is required</div>
-                  </div>
-
-
+          
                   <div class="col-lg-12">
                     <fieldset>
                       <textarea  formControlName="message"   name="message" rows="6" class="form-control" id="message" placeholder="message" required=""></textarea>
                     </fieldset>
+                    <div *ngIf="submitted && f.message.errors" class="alert alert-danger">
+                      <div *ngIf="f.message.errors.required">Ce champ est obligatoire </div>
+                    </div>
                   </div>
+
+
                   <div class="col-lg-12">
                     <fieldset>
                       <button type="submit" id="form-submit" class="filled-button" (click)="submit($event)" >ENVOYER</button>
                     </fieldset>
-                    
 
+                    <div *ngIf="submitted && f.valid" class="invalid-feedback">
+                  
+                           <h3>SUCCESS! </h3>  
+                    
+                    </div>
                   </div>
+
+
                 </div>
               </form>
             </div>
