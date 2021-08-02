@@ -23,7 +23,7 @@ const routes: Routes = [
   { path: 'Blog', component: BlogComponent},
   { path: 'Article/:id', component: DetailedArticleComponent},
   { path: 'offre', component: OfferComponent },
-  { path: 'detailOffre', component: DetailedOfferComponent  },
+  { path: 'detailOffre/:id', component: DetailedOfferComponent  },
 
 
   ]},
