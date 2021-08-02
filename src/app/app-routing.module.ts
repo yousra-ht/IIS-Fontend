@@ -8,6 +8,8 @@ import { IndexComponent } from './index/index.component';
 import { BlogComponent } from './BlogFolder/blog/blog.component';
 import { DetailedArticleComponent } from './BlogFolder/detailed-article/detailed-article.component';
 import { OfferComponent } from './OfferFolder/offer/offer.component';
+import { DetailedOfferComponent } from './offerFolder/detailed-offer/detailed-offer.component';
+
 
 const routes: Routes = [
 
@@ -21,6 +23,8 @@ const routes: Routes = [
   { path: 'Blog', component: BlogComponent},
   { path: 'Article:id', component: DetailedArticleComponent},
   { path: 'offre', component: OfferComponent },
+  { path: 'detailOffre', component: DetailedOfferComponent  },
+
 
   ]},
 
