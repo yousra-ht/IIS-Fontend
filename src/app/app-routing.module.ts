@@ -19,7 +19,7 @@ const routes: Routes = [
   { path: 'partenaire', component: PartenrComponent},
   { path: 'contact', component:  ContactComponent },
   { path: 'Blog', component: BlogComponent},
-  { path: 'Article', component: DetailedArticleComponent},
+  { path: 'Article:id', component: DetailedArticleComponent},
   { path: 'offre', component: OfferComponent },
 
   ]},
