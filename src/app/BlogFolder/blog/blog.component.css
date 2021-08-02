@@ -30,3 +30,22 @@
     line-height: 30px;
     transition: all 0.3s;
 }
+.sidebar .sidebar-item {
+    background-color: white;
+    padding: 17px;
+    margin-top: 50px;
+}
+ul.social-icons li a  {
+    width: 90px;
+    height: 50px;
+    display: inline-block;
+    line-height: 50px;
+    color: #ffffff;
+    font-size: 21px;
+    text-align: center;
+    transition: all .3s;
+}
+ul.social-icons li {
+    display: inline-block;
+    margin-right: 3px;
+}
