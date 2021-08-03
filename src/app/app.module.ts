@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule } from "@angular/core";
 import { BanniereComponent } from './Banniere/banniere/banniere.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -46,6 +46,7 @@ import { DetailedOfferComponent } from './offerFolder/detailed-offer/detailed-of
     DetailedArticleComponent,
     OfferComponent,
     DetailedOfferComponent,
+    
   ],
   imports: [
     BrowserModule,
@@ -53,6 +54,7 @@ import { DetailedOfferComponent } from './offerFolder/detailed-offer/detailed-of
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
+    
     // HttpClient
 
   ],
