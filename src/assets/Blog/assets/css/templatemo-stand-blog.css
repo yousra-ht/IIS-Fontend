@@ -38,10 +38,9 @@ h1,h2,h3,h4,h5,h6 {
 	display: inline-block;
 	background-color: #f48840;
 	color: #fff;
-	font-size: 13px;
+	font-size: 14px;
 	font-weight: 500;
 	padding: 12px 20px;
-	text-transform: uppercase;
 	transition: all .3s;
 }
 
@@ -413,9 +412,9 @@ header .navbar {
 
 .blog-posts .down-content {
 	padding: 40px;
-	border-right: 1px solid #eee;
-	border-left: 1px solid #eee;
-	border-bottom: 1px solid #eee;
+	border-right: 1px solid #D5DBDB;
+	border-left: 1px solid #D5DBDB;
+	border-bottom: 1px solid #D5DBDB;
 }
 
 .blog-posts .down-content span {
