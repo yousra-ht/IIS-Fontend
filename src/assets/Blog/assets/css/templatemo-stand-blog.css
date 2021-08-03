@@ -596,7 +596,7 @@ ul.page-numbers li a:hover {
 }
 
 .blog-posts .comments ul li .right-content {
-	margin-left: 130px;
+	margin-left: 53px;
 }
 
 .blog-posts .comments ul li .right-content h4 {
@@ -655,7 +655,7 @@ ul.page-numbers li a:hover {
 
 .blog-posts .submit-comment button {
 	display: inline-block;
-	background-color: #f48840;
+	background-color: #ea2229b8;
 	color: #fff;
 	font-size: 13px;
 	font-weight: 500;
@@ -753,12 +753,12 @@ ul.page-numbers li a:hover {
 .sidebar .categories ul li a {
 	font-size: 15px;
 	font-weight: 700;
-	color: #20232e;
+	color: #ffffff;
 	transition: all .3s;
 }
 
 .sidebar .categories ul li a:hover {
-	color: #f48840;
+	font-size: 20px;
 }
 
 .sidebar .tags ul li {
