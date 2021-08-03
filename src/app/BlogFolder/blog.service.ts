@@ -4,7 +4,7 @@ import axios from 'axios';
   providedIn: 'root'
 })
 export class BlogService {
-baseUrl='https://localhost:8000/Articles'
+baseUrl='http://localhost:8000/Articles'
   constructor() { }
 
   async getAllSArticles() {

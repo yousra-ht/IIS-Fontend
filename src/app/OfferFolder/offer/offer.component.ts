@@ -7,11 +7,14 @@ import {OfferService } from '../offer.service';
 })
 export class OfferComponent implements OnInit {
   OffreListe = [];
+  ArticleListe: any;
+
 
   constructor(private _offerService: OfferService  ) { }
 
   ngOnInit() {
     this._offerService.getAlloffer().then((resp) => { this.OffreListe= resp.data ; console.log(this.OffreListe) });
+    this._offerService.getAllSArticles().then((resp) => { this.ArticleListe = resp.data; console.log(this.ArticleListe) });
   }
 
 }
