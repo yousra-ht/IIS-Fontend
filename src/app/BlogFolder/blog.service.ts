@@ -5,8 +5,8 @@ import axios from 'axios';
 })
 export class BlogService {
   baseUrl = 'http://localhost:8000/Articles';
-  UrlArticle = 'https://localhost:8000/api/articles/';
-  UrlCommentaire=' https://localhost:8000/Avis/' ;
+  UrlArticle = 'http://localhost:8000/api/articles/';
+  UrlCommentaire=' http://localhost:8000/Avis/' ;
 
   constructor() { }
 

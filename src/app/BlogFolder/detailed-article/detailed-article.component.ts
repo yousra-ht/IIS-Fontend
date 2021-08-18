@@ -1,7 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { BlogService } from '../blog.service';
-import { NgbActiveModal ,  NgbModal} from '@ng-bootstrap/ng-bootstrap';
+// import { NgbActiveModal ,  NgbModal} from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'ngbd-modal-content',
@@ -23,7 +23,7 @@ import { NgbActiveModal ,  NgbModal} from '@ng-bootstrap/ng-bootstrap';
 export class NgbdModalContent {
   @Input() name;
 
-  constructor(public activeModal: NgbActiveModal) { }
+  constructor() { }
 }
 @Component({
   selector: 'app-detailed-article',
@@ -38,7 +38,7 @@ export class DetailedArticleComponent implements OnInit {
   CommentaireListe: any;
 
 
-  constructor(private blogService: BlogService, private route: ActivatedRoute,private modalService: NgbModal) { }
+  constructor(private blogService: BlogService, private route: ActivatedRoute) { }
 
   ngOnInit() {
     const id = this.route.snapshot.paramMap.get("id");
@@ -47,10 +47,10 @@ export class DetailedArticleComponent implements OnInit {
     this.blogService.getCommentaire(id).then((resp) => { this.CommentaireListe = resp.data; console.log(this.CommentaireListe) });
 
   }
-  open() {
-    const modalRef = this.modalService.open(NgbdModalContent);
-    modalRef.componentInstance.name = 'World';
-  }
+  // open() {
+  //   const modalRef = this.modalService.open(NgbdModalContent);
+  //   modalRef.componentInstance.name = 'World';
+  // }
   submit(e) {
     alert('nn');
   }
