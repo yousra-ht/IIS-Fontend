@@ -6,7 +6,7 @@ import axios from 'axios';
 export class BlogService {
   baseUrl = 'http://localhost:8000/Articles';
   UrlArticle = 'http://localhost:8000/api/articles/';
-  UrlCommentaire=' http://localhost:8000/Avis/' ;
+  UrlCommentaire = ' http://localhost:8000/Avis/';
 
   constructor() { }
 
@@ -22,5 +22,15 @@ export class BlogService {
     return await axios.get(`${this.UrlCommentaire}` + id);
   }
 
-  
+  AjoutMember(member) {
+    return axios.post(`https://localhost:8000/createmember`, member);
+
+  }
+  AjoutArticle(article) {
+    return axios.post('https://localhost:8000/api/avis', article)
+  }
+  getMember(email) {
+    return axios.get('https://localhost:8000/Member/' + email)
+  }
+
 }

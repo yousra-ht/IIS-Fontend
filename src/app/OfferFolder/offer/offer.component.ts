@@ -14,7 +14,7 @@ export class OfferComponent implements OnInit {
 
   ngOnInit() {
     this._offerService.getAlloffer().then((resp) => { this.OffreListe= resp.data ; console.log(this.OffreListe) });
-    this._offerService.getAllSArticles().then((resp) => { this.ArticleListe = resp.data; console.log(this.ArticleListe) });
+    // this._offerService.getAllSArticles().then((resp) => { this.ArticleListe = resp.data; console.log(this.ArticleListe) });
   }
 
 }

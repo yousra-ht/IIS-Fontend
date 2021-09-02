@@ -572,7 +572,7 @@ ul.page-numbers li a:hover {
 	display: inline-block;
 	margin-bottom: 20px;
 	padding-bottom: 20px;
-	border-bottom: 1px solid #eee;
+	
 }
 
 .blog-posts .comments ul li.replied {
@@ -654,6 +654,7 @@ ul.page-numbers li a:hover {
 }
 
 .blog-posts .submit-comment button {
+	margin-bottom: 10px ; 
 	display: inline-block;
 	background-color: #ea2229b8;
 	color: #fff;
@@ -666,9 +667,9 @@ ul.page-numbers li a:hover {
 	outline: none;
 }
 
-.blog-posts .submit-comment button:hover {
+/* .blog-posts .submit-comment button:hover {
 	background-color: #fb9857;
-}
+} */
 
 /* Sidebar */
 
