@@ -1,12 +1,16 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { BlogService } from '../blog.service';
-import { NgbActiveModal, NgbModal } from '@ng-bootstrap/ng-bootstrap';
+
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 
 
 
-
+@Component({
+  selector: 'app-detailed-article',
+  templateUrl: './detailed-article.component.html',
+  styleUrls: ['./detailed-article.component.css']
+})
 export class DetailedArticleComponent implements OnInit {
   form: FormGroup;
   Article: any;
@@ -15,7 +19,7 @@ export class DetailedArticleComponent implements OnInit {
   member: any;
 
   display: any;
-  constructor(private blogService: BlogService, private route: ActivatedRoute, private modalService: NgbModal, private formBuilder: FormBuilder) { }
+  constructor(private blogService: BlogService, private route: ActivatedRoute, private formBuilder: FormBuilder) { }
 
   ngOnInit() {
     const id = this.route.snapshot.paramMap.get("id");
@@ -34,11 +38,7 @@ export class DetailedArticleComponent implements OnInit {
 
   }
 
-  get f() { return this.form.controls; }
-  open() {
-    const modalRef = this.modalService.open(NgbdModalContent);
-    modalRef.componentInstance.name = 'World';
-  }
+
   submit(e) {
 
 
