@@ -1,0 +1,87 @@
+
+
+
+* {
+	margin: 0;
+	padding: 0;
+	/* box-sizing: border-box;
+	font-family: 'Source Sans Pro', sans-serif; */
+}
+
+ .icon-bar {
+   
+	position: fixed;
+	top: 50%;
+	/* transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	z-index: 10; */
+    right: 30px;
+}
+
+a {
+    border-radius: 5px;
+	text-decoration: none;
+	width: 50px;
+	background: #3b5999;
+	color: #fff;
+	display: flex;
+    margin: 4px;
+	justify-content: left;   
+	align-items: center;
+	padding: 5px;
+	font-size: 20px;
+    transform: translateX(40%);
+	/* transform: translateX(-170px); */
+	/* -webkit-transform: translateX(-6px);  */
+	/* -ms-transform: translateX(-170px); */
+	transition: all 0.5s linear;
+	-webkit-transition: all 0.5s linear;
+	-ms-transition: all 0.5s linear;
+}
+
+
+.facebook {
+	background: #3b5998;
+}
+.twitter {
+	background: #00aced;
+}
+
+.instagram {
+	background: #e4405f;
+}
+
+.youtube {
+	background: #cd201f;
+}
+
+.linkedin {
+	background: #0077B5;
+}
+.whatsapp{
+    background: #25d366;
+}
+
+a i {
+	padding-left: 10px;
+	font-size: 30px !important;
+	animation: letszoom 1.5s linear alternate-reverse infinite;
+}
+
+@keyframes letszoom {
+	from {
+		transform: scale(0.7);
+	}
+
+	to {
+		transform: scale(1.1);
+	}
+
+}
+
+a:hover {
+	transform: translateX(0);
+	-webkit-transform: translateX(0);
+	-ms-transform: translateX(0);
+}  

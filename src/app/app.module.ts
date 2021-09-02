@@ -23,6 +23,7 @@ import { BlogComponent } from './BlogFolder/blog/blog.component';
 import { DetailedArticleComponent } from './BlogFolder/detailed-article/detailed-article.component';
 import { OfferComponent } from './OfferFolder/offer/offer.component';
 import { DetailedOfferComponent } from './offerFolder/detailed-offer/detailed-offer.component';
+import { SocialIconComponent } from './Banniere/social-icon/social-icon.component';
 // import {HttpClient} from '@angular/common/http';
 
 @NgModule({
@@ -46,6 +47,7 @@ import { DetailedOfferComponent } from './offerFolder/detailed-offer/detailed-of
     DetailedArticleComponent,
     OfferComponent,
     DetailedOfferComponent,
+    SocialIconComponent,
     
   ],
   imports: [

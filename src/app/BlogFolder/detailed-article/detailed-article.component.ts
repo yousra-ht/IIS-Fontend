@@ -24,7 +24,7 @@ import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms'
 export class NgbdModalContent {
   @Input() name;
 
-  constructor(public activeModal: NgbActiveModal) { }
+  constructor() { }
 }
 @Component({
   selector: 'app-detailed-article',
