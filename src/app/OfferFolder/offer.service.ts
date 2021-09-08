@@ -8,7 +8,7 @@ import axios from 'axios';
 export class OfferService {
   Url= 'http://localhost:8000/api/offre_emplois';
   Urloffre="http://localhost:8000/api/offre_emplois/";
-  url1="http://localhost:8000/api/candidatures";
+  url1="http://localhost:8000/createCandidature/";
   baseUrl = 'http://localhost:8000/Articles';
   constructor() { }
   async getAlloffer(){
@@ -17,8 +17,8 @@ export class OfferService {
   async getoffer(id) {
     return await axios.get(`${this.Urloffre}` + id);
   }
-  async createcandidature(Candidature) {
-    return axios.post(`${this.url1}`,  Candidature);
+  async createcandidature(Candidature ,id) {
+    return axios.post(`${this.url1}`+id ,  Candidature);
   }
 
   async getAllSArticles() {
