@@ -4,7 +4,7 @@ import axios from 'axios';
   providedIn: 'root'
 })
 export class BlogService {
-  baseUrl = 'http://localhost:8000/Articles';
+  baseUrl = 'http://localhost:8000/Article';
   UrlArticle = 'http://localhost:8000/api/articles/';
   UrlCommentaire = ' http://localhost:8000/Avis/';
 

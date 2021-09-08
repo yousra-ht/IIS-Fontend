@@ -8,8 +8,8 @@ import { FooterComponent } from './FooterFolder/footer/footer.component';
 import { ServiceComponent } from './ServiceFolder/service/service.component';
 import { ValueComponent } from './valueFolder/value/value.component';
 import { TeamComponent } from './TeamFolder/team/team.component';
-import{ DescriptionComponent} from'./ShortDescriptionFolder/description/description.component';
-import{CounterComponent} from'./CounterFolder/counter/counter.component';
+import { DescriptionComponent } from './ShortDescriptionFolder/description/description.component';
+import { CounterComponent } from './CounterFolder/counter/counter.component';
 import { PartenrComponent } from './PartnerFolder/partenr/partenr.component';
 import { HomeComponent } from './HomeFolder/home/home.component'
 import { HttpClientModule } from '@angular/common/http';
@@ -24,6 +24,7 @@ import { DetailedArticleComponent } from './BlogFolder/detailed-article/detailed
 import { OfferComponent } from './OfferFolder/offer/offer.component';
 import { DetailedOfferComponent } from './offerFolder/detailed-offer/detailed-offer.component';
 import { SocialIconComponent } from './Banniere/social-icon/social-icon.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 // import {HttpClient} from '@angular/common/http';
 
 @NgModule({
@@ -48,7 +49,7 @@ import { SocialIconComponent } from './Banniere/social-icon/social-icon.componen
     OfferComponent,
     DetailedOfferComponent,
     SocialIconComponent,
-    
+
   ],
   imports: [
     BrowserModule,
@@ -56,11 +57,14 @@ import { SocialIconComponent } from './Banniere/social-icon/social-icon.componen
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
-    
+    NgbModule,
+    // NgbActiveModal,
+    // NgbModal 
+
     // HttpClient
 
   ],
-  providers: [VariableGService],
-  bootstrap: [AppComponent]
+  providers: [VariableGService ],
+  bootstrap: [AppComponent , ]
 })
 export class AppModule { }
