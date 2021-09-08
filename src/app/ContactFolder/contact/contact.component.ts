@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import {ContactService} from '../contact.service';
-
-
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
@@ -10,18 +8,9 @@ import {ContactService} from '../contact.service';
 })
 export class ContactComponent implements OnInit {
   form: FormGroup;
-
   submitted = false;
-
-
-
-
-
-
+  isDataLoading =true ; 
   constructor(private _contactService:ContactService,private formBuilder: FormBuilder) { }
-
-  
-
   ngOnInit() {
     this.form = this.formBuilder.group({
     nom: new FormControl('', [Validators.required]),
@@ -29,15 +18,8 @@ export class ContactComponent implements OnInit {
     mail: new FormControl('', [Validators.required,Validators.email ]),
     message: new FormControl('', [Validators.required]),
   });
-
   }
-
-
-
-
-
   get f() { return this.form.controls; }
-
   submit(e) {
     this.submitted = true;
     if (this.form.invalid) {
