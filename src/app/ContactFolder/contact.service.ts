@@ -6,11 +6,11 @@ import axios from 'axios';
   providedIn: 'root'
 })
 export class ContactService {
-  private baseUrl = 'http://localhost:8000/api/contacts';
+  private baseUrl = 'https://localhost:8000/api/contacts';
   constructor() { }
 
   createContact(contact) {
-    return axios.post(`${this.baseUrl}`,contact);
+    return axios.post(`${this.baseUrl}`, contact);
 
   }
 

@@ -15,14 +15,14 @@ import { HomeComponent } from './HomeFolder/home/home.component'
 import { HttpClientModule } from '@angular/common/http';
 import { CarouselComponent } from './Banniere/carousel/carousel.component';
 import { AboutComponent } from './AboutFolder/about/about.component';
-import { ContactComponent } from './ContactFolder/contact/contact.component';
+import { ContactComponent, NgbdModalContact } from './ContactFolder/contact/contact.component';
 import { IndexComponent } from './index/index.component';
 import { VariableGService } from './variable-g.service';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BlogComponent } from './BlogFolder/blog/blog.component';
-import { DetailedArticleComponent } from './BlogFolder/detailed-article/detailed-article.component';
+import { DetailedArticleComponent, NgbdModalConfirm } from './BlogFolder/detailed-article/detailed-article.component';
 import { OfferComponent } from './OfferFolder/offer/offer.component';
-import { DetailedOfferComponent } from './offerFolder/detailed-offer/detailed-offer.component';
+import { DetailedOfferComponent, NgbdModalOffre } from './offerFolder/detailed-offer/detailed-offer.component';
 import { SocialIconComponent } from './Banniere/social-icon/social-icon.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 // import {HttpClient} from '@angular/common/http';
@@ -49,6 +49,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     OfferComponent,
     DetailedOfferComponent,
     SocialIconComponent,
+    NgbdModalConfirm,
+    NgbdModalContact,
+    NgbdModalOffre
 
   ],
   imports: [
@@ -58,13 +61,15 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     FormsModule,
     ReactiveFormsModule,
     NgbModule,
+
     // NgbActiveModal,
     // NgbModal 
 
     // HttpClient
 
   ],
-  providers: [VariableGService ],
-  bootstrap: [AppComponent , ]
+  entryComponents: [NgbdModalConfirm, NgbdModalContact, NgbdModalOffre],
+  providers: [VariableGService],
+  bootstrap: [AppComponent,]
 })
 export class AppModule { }
