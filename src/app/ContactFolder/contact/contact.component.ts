@@ -60,11 +60,9 @@ export class ContactComponent implements OnInit {
       'Date': new Date()
     }).then(() => {
       console.log("succes")
-      //this.open('focusFirst')
+      this.open('focusFirst')
     })
   }
-
-
   open(name: string) {
     this._modalService.open(MODALS[name]);
   }
