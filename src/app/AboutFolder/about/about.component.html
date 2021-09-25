@@ -16,8 +16,8 @@
                                     data-wow-offset="0">
 
                                     <img style="   
-                                    width: 555px;
-                                    height: 547px;
+                                    width: 90%;
+                                    height: 100%;
                                   " src="../../../assets/img/img3.jpg">
                                 </div>
                             </div>
@@ -27,18 +27,20 @@
                                     <div class="skill wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s"
                                         data-wow-offset="0">
                                         <!-- progress start -->
-                                        
-                                        <ng-container *ngFor="let Service of  ServiceListe ; let i = index" >
-                                        <div class="progress">
-                                            <div class="lead" >{{Service.title}} {{Service.pourcentage}} % </div>
-                                            <div class="progress-bar wow fadeInLeft"  [style.width.%]="getWidth(Service)"
-                                            data-wow-duration="1.5s" data-wow-delay="1.2s">
 
-                                            <div  class="progress-bar wow fadeInLeft"   data-wow-duration="1.5s" data-wow-delay="1.2s" ng-style="{width: '80px'}"></div>
+                                        <ng-container *ngFor="let Service of  ServiceListe ; let i = index">
+                                            <div class="progress">
+                                                <div class="lead">{{Service.title}} {{Service.pourcentage}} % </div>
+                                                <div class="progress-bar wow fadeInLeft"
+                                                    [style.width.%]="getWidth(Service)" data-wow-duration="1.5s"
+                                                    data-wow-delay="1.2s">
+
+                                                    <div class="progress-bar wow fadeInLeft" data-wow-duration="1.5s"
+                                                        data-wow-delay="1.2s" ng-style="{width: '80px'}"></div>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <!-- progress end -->
-                                    </ng-container >
+                                            <!-- progress end -->
+                                        </ng-container>
 
                                     </div>
                                 </div>
@@ -49,9 +51,9 @@
             </div>
         </div>
     </div>
-   
+
     <br />
     <br />
     <br />
-    
+
 </section><!-- End of About Section-->

@@ -1017,9 +1017,10 @@ footer p a:hover {
 
 @media (max-width: 992px) {
 	.navbar .navbar-brand {
-		position: absolute;
-		left: 30px;
-		top: 25px;
+		height: 58px;
+		/* width: 85%; */
+		width: 100px;
+		margin-top: 0%;
 	}
 	.background-header .navbar-brand,
 	.background-header .navbar-toggler {

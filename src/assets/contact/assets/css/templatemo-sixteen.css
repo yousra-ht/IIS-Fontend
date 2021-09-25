@@ -1000,9 +1000,10 @@ footer .inner-content p a {
 
 @media (max-width: 992px) {
 	.navbar .navbar-brand {
-		position: absolute;
-		left: 30px;
-		top: 32px;
+		/* position: absolute; */
+		/* left: 30px;
+		top: 32px; */
+		margin-top: 0%;
 	}
 	.navbar .navbar-brand {
 		width: auto;
