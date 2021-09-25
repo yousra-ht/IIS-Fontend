@@ -1,0 +1,128 @@
+<app-carousel></app-carousel>
+<section class="blog-posts grid-system">
+    <app-social-icon></app-social-icon>
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-14">
+                <div class="all-blog-posts">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="blog-post">
+                                <div class="down-content">
+                                    <a href="post-details.html">
+                                        <h4> {{ Candidature.titre}}</h4>
+                                    </a>
+                                    <ul class="post-info">
+                                        <li><a href="#"><i class="fa fa-clock-o" aria-hidden="true"></i> {{
+                                                Candidature.DateAjout}} </a></li>
+                                    </ul>
+                                    <p> {{ Candidature.description }} </p>
+                                    <div class="post-options">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <ul class="post-tags">
+                                                    <li><a href="#">Postuler</a>,</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-12">
+            <div class="sidebar-item submit-comment">
+                <div class="sidebar-heading">
+                    <h2>Postuler</h2>
+                </div>
+                <div class="content">
+                    <form [formGroup]="form" ngNativeValidate>
+                        <div class="row">
+
+                            <div class="col-md-6 col-sm-12">
+                                <input formControlName="nom" name="nom" type="text" required class="form-control"
+                                    id="nom" placeholder="Nom" >
+
+                            </div>
+
+                            <div class="col-md-6 col-sm-12">
+                                <input formControlName="prenom" name="prenom" type="text" required class="form-control"
+                                    id="prenom" placeholder="Prenom" >
+
+                            </div>
+
+
+                            <div class="col-md-7 col-sm-7">
+
+                                <input formControlName="email" name="email" type="text" id="email" required
+                                    placeholder="E-mail">
+
+
+                            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            <div class="col-md-5 col-sm-12">
+                                <fieldset>
+                                    <input type="file" (change)="uploadFile($event)" required>
+                                </fieldset>
+
+
+
+                            </div>
+
+                            <div class="col-lg-12">
+                                <fieldset>
+                                    <button id="myBtn" type="submit" class="main-button"
+                                        (click)="submit($event)">Submit</button>
+                                </fieldset>
+                            </div>
+
+                        </div>
+                    </form>
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <ul class="social-icons">
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Behance</a></li>
+                    <li><a href="#">Linkedin</a></li>
+                    <li><a href="#">Dribbble</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-12">
+                <div class="copyright-text">
+                    <p>Copyright 2020 Stand Blog Co.
+
+                        | Design: <a rel="nofollow" href="https://templatemo.com" target="_parent">TemplateMo</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
