@@ -29,7 +29,21 @@ body {
    animation: textAnimate 10s infinite alternate;
    
  }
- 
+ @media (max-width: 992px)
+ { 
+  svg text {
+    font-family: Lora;
+    letter-spacing: 10px;
+    stroke: #e922294d;
+    font-size: 42px;
+    font-weight: 700;
+    stroke-width: 3;
+   
+    animation: textAnimate 10s infinite alternate;
+    
+  }
+
+ }
  @keyframes textAnimate {
    0% {
      stroke-dasharray: 0 50%;

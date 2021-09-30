@@ -76,6 +76,7 @@ import { NgbdModalOffre2, SingleoffreComponent } from './OfferFolder/singleoffre
   ],
   entryComponents: [NgbdModalConfirm, NgbdModalContact, NgbdModalOffre2],
   providers: [VariableGService],
-  bootstrap: [AppComponent,]
+  bootstrap: [AppComponent,],
+  exports: [DetailedOfferComponent],
 })
 export class AppModule { }

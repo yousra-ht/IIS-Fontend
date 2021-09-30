@@ -198,7 +198,7 @@ header .navbar {
 }
 .navbar .navbar-brand {
 	float: 	left;
-	margin-top: -12px;
+	margin-top: -6px;
 	outline: none;
 }
 .navbar .navbar-brand h2 {
@@ -1017,18 +1017,16 @@ footer p a:hover {
 
 @media (max-width: 992px) {
 	.navbar .navbar-brand {
-		height: 58px;
-		/* width: 85%; */
-		width: 100px;
+		/* height: 58px; */
+		width: 64%;
+		/* width: 100px; */
 		margin-top: 0%;
 	}
 	.background-header .navbar-brand,
 	.background-header .navbar-toggler {
 		top: 15px;
 	}
-	.navbar .navbar-brand {
-		width: auto;
-	}
+
 	.navbar:after {
 		display: none;
 	}
