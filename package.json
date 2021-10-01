@@ -2,7 +2,7 @@
   "name": "iis-frontend",
   "version": "0.0.0",
   "scripts": {
-    "ng": "ng",
+    "ng": "node server.js",
     "heroku-postbuild": "ng build --prod",
     "start": "ng serve",
     "build": "ng build",
