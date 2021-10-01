@@ -10,7 +10,7 @@ import { ValueComponent } from './valueFolder/value/value.component';
 import { TeamComponent } from './TeamFolder/team/team.component';
 import { DescriptionComponent } from './ShortDescriptionFolder/description/description.component';
 import { CounterComponent } from './CounterFolder/counter/counter.component';
-import { PartenrComponent } from './partnerFolder/partenr/partenr.component';
+import { PartenrComponent } from './PartnerFolder/partenr/partenr.component';
 import { HomeComponent } from './HomeFolder/home/home.component'
 import { HttpClientModule } from '@angular/common/http';
 import { CarouselComponent } from './Banniere/carousel/carousel.component';
@@ -22,7 +22,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BlogComponent } from './BlogFolder/blog/blog.component';
 import { DetailedArticleComponent, NgbdModalConfirm } from './BlogFolder/detailed-article/detailed-article.component';
 import { OfferComponent } from './OfferFolder/offer/offer.component';
-import { DetailedOfferComponent, NgbdModalOffre } from './OfferFolder/detailed-offer/detailed-offer.component';
+import { DetailedOfferComponent, NgbdModalOffre } from './offerFolder/detailed-offer/detailed-offer.component';
 import { SocialIconComponent } from './Banniere/social-icon/social-icon.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 // import {HttpClient} from '@angular/common/http';
