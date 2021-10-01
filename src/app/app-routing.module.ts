@@ -14,19 +14,21 @@ import { DetailedOfferComponent } from './offerFolder/detailed-offer/detailed-of
 const routes: Routes = [
 
 
-  { path: '', 
-  component: IndexComponent , children : [
-   { path:'', component: HomeComponent },
-  { path: 'services', component: ServiceComponent },
-  { path: 'partenaire', component: PartenrComponent},
-  { path: 'contact', component:  ContactComponent },
-  { path: 'Blog', component: BlogComponent},
-  { path: 'Article/:id', component: DetailedArticleComponent},
-  { path: 'offre', component: OfferComponent },
-  { path: 'detailOffre/:id', component: DetailedOfferComponent  },
+  {
+    path: '',
+    component: IndexComponent, children: [
+      { path: '', component: HomeComponent },
+      { path: 'services', component: ServiceComponent },
+      { path: 'partenaire', component: PartenrComponent },
+      { path: 'contact', component: ContactComponent },
+      { path: 'Blog', component: BlogComponent },
+      { path: 'Article/:id', component: DetailedArticleComponent },
+      { path: 'offres', component: OfferComponent },
+      { path: 'detailOffre/:id', component: DetailedOfferComponent },
 
 
-  ]},
+    ]
+  },
 
 ];
 

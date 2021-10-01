@@ -13,6 +13,16 @@
     width: 26%;
     text-align: center;
 }
+@media (max-width: 992px)
+{
+    .blog-posts .main-button a {
+        height: 40px;
+        line-height: 43px;
+        padding: 0px;
+        width: 49%;
+        text-align: center;
+    }  
+}
 .main-button a {
     display: inline-block;
     background-color: #ea2229c9;
